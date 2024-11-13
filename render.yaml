@@ -9,7 +9,6 @@ services:
       cd client && npm install              # Install frontend dependencies
       cd client && npm run build            # Build the React app
     startCommand: npm run dev               # Run both frontend and backend concurrently
-    nodeVersion: "16.x"  # Ensure Node.js version 16.x is used
     autoDeploy: true
     envVars:
       - key: MONGO_URI
