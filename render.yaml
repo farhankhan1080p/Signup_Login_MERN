@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: my-express-backend
+    env: node
+    region: global
+    plan: free
+    buildCommand: npm install
+    startCommand: node app.js
+    autoDeploy: true
+    envVars:
+      - key: MONGO_URI
+        value: mongodb+srv://fk510199:MRAzJmU69Miz0A8u@cluster0.7j2xk.mongodb.net/FarhanDb
+      - key: PORT
+        value: 8000

@@ -1,0 +1,119 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #074173, #11468F, #11468F, #074173);
+  margin: 0;
+  padding: 0;
+  background-attachment: fixed;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.app-background {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+h1 {
+  color: #007bff;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-weight: bold;
+  color: #333;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  transition: 0.3s;
+}
+
+.form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+  outline: none;
+}
+
+.button-save, .button-edit, .button-delete {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button-save {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+}
+
+.button-save:hover {
+  background-color: #0056b3;
+}
+
+.button-edit {
+  background-color: #5E5DF0;
+  color: #fff;
+  border: none;
+  margin-right: 5px;
+}
+
+.button-edit:hover {
+  background-color: #4c46d6;
+}
+
+.button-delete {
+  background-color: #FF4742;
+  color: #fff;
+  border: none;
+}
+
+.button-delete:hover {
+  background-color: #d43f3a;
+}
+
+.student-list {
+  margin-top: 20px;
+}
+
+.student-card {
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.student-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.student-card p {
+  margin: 5px 0;
+}
