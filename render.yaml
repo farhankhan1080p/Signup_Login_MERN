@@ -4,7 +4,10 @@ services:
     env: node
     region: global
     plan: free
-    buildCommand: npm run build
+    buildCommand: |
+      npm install                          # Install backend dependencies
+      cd client && npm install              # Install frontend dependencies
+      cd client && npm run build            # Build the frontend React app 
     startCommand: npm run dev
     autoDeploy: true
     envVars:
