@@ -5,7 +5,7 @@ services:
     region: global
     plan: free
     buildCommand: npm install
-    startCommand: node app.js
+    startCommand: npm run dev
     autoDeploy: true
     envVars:
       - key: MONGO_URI
