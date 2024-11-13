@@ -21,7 +21,7 @@
   },
   "scripts": {
     "start": "node app.js",
-    "client": "cross-env PORT=3003 react-scripts start",
+    "client": "react-scripts start",
     "build": "react-scripts build",
     "dev": "concurrently \"npm run start\" \"npm run client\"",
     "test": "react-scripts test",
