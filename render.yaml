@@ -4,7 +4,9 @@ services:
     env: node
     region: global
     plan: free
-    buildCommand: npm install
+    buildCommand: |
+      npm install
+      cd client && npm install && npm run build
     startCommand: npm run dev
     autoDeploy: true
     envVars:
